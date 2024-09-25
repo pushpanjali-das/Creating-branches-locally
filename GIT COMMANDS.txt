@@ -1,0 +1,36 @@
+									GIT COMMANDS
+
+
+1.To initialize a local directory as a local repository use the command 		:   navigate to that directory ---> git init
+2.After adding file, here files are in the MODIFIED stage ( First stage in git)
+3.To move it to staged stage use 			(staged area)			:   git add .  (or)  git add filename.extension
+4.To move them to Repository stage (or) to commit i.e., save the changes (Repository)   : git commit -m "message"	
+5.Next to push these files to a remote repository ,
+ first we need to add that origin link to our local, use				: git remote add origin "repo url"
+6.To push use the command								: git push -u origin master
+											
+												-u :- stands for upstream for future push and pull operations, we again 														need not to use this entire git push -u origin master,
+													git push and git pull are enough
+												origin :- url of repo is replaced by origin 
+												master :- the default branch name, 
+Here changes in the master branch of local repo gets pushed to the master branch of the remote repo.
+If any other branch is being used, the command will be 					: git push -u origin <branch name>
+
+7.Creating new branch and checkingout on it						: git checkout -b <branch name>
+8.Checking the current working branch							: git branch     (or)     git status
+9.To track the changes
+  understanding current state of repository (staged, untracked etc)			: git status
+
+10.To delete a file when they are staged but not committed				: git reset filename.extension (stops tracking, commit msg not required)  (or) 
+											  git rm --cached filename.ext (keeps tracking and commit msg required)
+
+11.To remove the added repository 							: git remote remove <remote name>  (or) git remote remove origin (to remove 																				origin)
+
+
+
+
+
+
+
+
+
