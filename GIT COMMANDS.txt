@@ -26,7 +26,7 @@ If any other branch is being used, the command will be 					: git push -u origin
 
 11.To remove the added repository 							: git remote remove <remote name>  (or) git remote remove origin (to remove 																				origin)
 
-git push origin --delete branch_name							: To delete the present in remote repository
+git push origin --delete branch_name							: To delete the branch present in remote 												  repository
 
 
 
